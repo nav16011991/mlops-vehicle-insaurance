@@ -1,0 +1,11 @@
+[project]
+name = "mlops-vehicle-insaurance"
+version = "0.0.1"
+description = "An MLOps project for productionizing models"
+authors = [{name = "Naveen Bhardwaj", email = "nav16011991@gmail.com"}]
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}

@@ -208,3 +208,5 @@ __marimo__/
 
 venv/
 rf_model.pkl
+
+artifact/

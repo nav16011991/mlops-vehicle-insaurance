@@ -10,14 +10,20 @@
 
 
 # Below code is added to demo.py to test logging functionality
-from src.exception import MyException
-from src.logger import logging
-import sys
+# from src.exception import MyException
+# from src.logger import logging
+# import sys
 
-try:
-    logging.info("Starting to test logging and exception handling.")
-    # Intentionally cause a ZeroDivisionError
-    result = 10 + 'a'
-except Exception as e:
-    logging.error("An error occurred")
-    raise MyException(e, sys) from e
+# try:
+#     logging.info("Starting to test logging and exception handling.")
+#     # Intentionally cause a ZeroDivisionError
+#     result = 10 + 'a'
+# except Exception as e:
+#     logging.error("An error occurred")
+#     raise MyException(e, sys) from e
+
+
+from src.pipeline.training_pipeline import TrainingPipeline
+if __name__ == "__main__":
+    training_pipeline = TrainingPipeline()
+    training_pipeline.run_pipeline()
